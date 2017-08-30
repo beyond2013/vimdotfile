@@ -1,0 +1,6 @@
+My VIM dot file, I use vundle plugin manager to manage plugins.
+I have following plugins installed:
+1. Ultisnips: for code snippets
+2. Vim Fugitive: for integrating vim with git
+3. Vim Rails: for working with rails projects
+4. Vim Airline: for a nice statusbar 
