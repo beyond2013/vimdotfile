@@ -18,8 +18,8 @@ latexmk; two small configurations
 ---
 I have placed vimrc in `dotfiles` directory within homefolder
 on my laptop and symlinked the file vimrc (without the dot) using 
-the following command in terminal
-.
+the following command in terminal:
+
 ```console
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ```
