@@ -13,6 +13,7 @@ with configuration of following plugins
 latexmk; two small configurations
 1. target set to compile to pdf
 2. use evince as pdf viewer 
+
 #Desktop settings
 =================
 I have placed vimrc in dotfiles directory within homefolder
