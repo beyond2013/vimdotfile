@@ -14,8 +14,8 @@ latexmk; two small configurations
 1. target set to compile to pdf
 2. use evince as pdf viewer 
 
-# Desktop settings
-=================
+### Desktop settings
+===
 I have placed vimrc in dotfiles directory within homefolder
 on my laptop and symlinked the file vimrc (without the dot).
 The symlink is named .vimrc which points to ~/dotfiles/virmc
