@@ -1,21 +1,31 @@
 set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+
+" required by vim-textobj-rubyblock plugin
+
 runtime macros/matchit.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-call vundle#end()
+
+filetype off
+
+" I am now using minpac which uses new package feature for managing plugins
+packadd minpac
+call minpac#init()
+call minpac#add('k-takata/minpac', {'type': 'opt'})
+call minpac#add('tpope/vim-rails')
+call minpac#add('SirVer/ultisnips')
+call minpac#add('honza/vim-snippets')
+call minpac#add('tpope/vim-fugitive')
+call minpac#add('vim-airline/vim-airline')
+call minpac#add('vim-airline/vim-airline-themes')
+call minpac#add('tpope/vim-surround')
+" dependency of vim-textobj-rubyblock
+call minpac#add('kana/vim-textobj-user')
+call minpac#add('nelstrom/vim-textobj-rubyblock')
+
 syntax on
 filetype plugin indent on
 " ================ General Config ====================
 
- set number                      "Line numbers are good
+ set number relativenumber                       "relative Line numbers are best
  set columns=86
  set backspace=indent,eol,start  "Allow backspace in insert mode
  set history=1000                "Store lots of :cmdline history
@@ -60,8 +70,8 @@ vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
 
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsListSnippets="<s-tab>"
-let g:UltiSnipsJumpForwardTrigger="<s-j>"
-let g:UltiSnipsJumpBackwardTrigger="<s-k>"
+let g:UltiSnipsListSnippets="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsSnippetDirectories = ['UltiSnips', 'UltiSnips_mine']
+let g:UltiSnipsSnippetDirectories = ["mysnippets"]
