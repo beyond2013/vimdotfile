@@ -4,6 +4,8 @@ set nocompatible
 
 runtime macros/matchit.vim
 
+let $PATH="/home/imran/.rbenv/shims:/home/imran/.rbenv/bin:" . $PATH
+
 filetype off
 
 " I am now using minpac which uses new package feature for managing plugins
@@ -68,6 +70,10 @@ set complete+=kspell
 noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
+" A Keybinding that allows to jump to the end of line in insert mode 
+inoremap <C-e> <C-o>$
+" A Keybinding that allows to jump to the beginning of line in insert mode 
+ inoremap <C-a> <C-o>0
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-tab>"
