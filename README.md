@@ -38,3 +38,5 @@ To configure a freshly installed vim (with ruby support)
 2. In terminal `git clone https://github.com/k-takata/minpac.git ~/.vim/pack/minpac/opt/minpac`  
 3. lanch vim and run `:call minpac#update()`   
 
+* switching capslock and escape key system wide for ease of editing in vim
+From terminal run `dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:swapescape']"`
