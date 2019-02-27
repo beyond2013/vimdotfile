@@ -34,11 +34,7 @@ The symlink is named .vimrc which points to ~/vimdotfiles/virmc
 ---
 To configure a freshly installed vim (with ruby support) 
 
-1. Make a .vim folder in home
-
-2. ```console
-git clone https://github.com/k-takata/minpac.git \
-    ~/.vim/pack/minpac/opt/minpac
-```  
+1. Make a .vim folder in home  
+2. ```console git clone https://github.com/k-takata/minpac.git ~/.vim/pack/minpac/opt/minpac ``` 
 3. lanch vim and run :call minpac#update() 
 
