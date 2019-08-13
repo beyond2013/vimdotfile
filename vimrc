@@ -39,7 +39,7 @@ filetype plugin indent on
  set path+=**                    "Look for files deep within directory hierarchy when using :find
  set wildmenu                    "Display all matching files when we tab complete 
  set wildignore=*.exe,*.pdf,*.jpeg,*.png
-
+ set noshowmatch								"Disable parenthesis matching
 " ================ Indentation ======================
 
  set autoindent
@@ -80,4 +80,4 @@ let g:UltiSnipsListSnippets="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsSnippetDirectories = ["mysnippets"]
+let g:UltiSnipsSnippetDirectories = ["UltiSnips",$HOME.'/backup/codesnippets']
