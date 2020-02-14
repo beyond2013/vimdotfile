@@ -22,7 +22,7 @@ call minpac#add('tpope/vim-surround')
 " dependency of vim-textobj-rubyblock
 call minpac#add('kana/vim-textobj-user')
 call minpac#add('nelstrom/vim-textobj-rubyblock')
-
+call minpac#add('tpope/vim-commentary')
 syntax on
 filetype plugin indent on
 " ================ General Config ====================
