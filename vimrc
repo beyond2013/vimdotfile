@@ -23,6 +23,9 @@ call minpac#add('tpope/vim-surround')
 call minpac#add('kana/vim-textobj-user')
 call minpac#add('nelstrom/vim-textobj-rubyblock')
 call minpac#add('tpope/vim-commentary')
+call minpac#add('tpope/vim-repeat')
+call minpac#add('vim-pandoc/vim-pandoc')
+call minpac#add('vim-pandoc/vim-pandoc-syntax')
 syntax on
 filetype plugin indent on
 " ================ General Config ====================
@@ -81,3 +84,6 @@ let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetDirectories = ["UltiSnips",$HOME.'/backup/codesnippets']
+
+set tags=./tags,tags;$HOME
+ 
